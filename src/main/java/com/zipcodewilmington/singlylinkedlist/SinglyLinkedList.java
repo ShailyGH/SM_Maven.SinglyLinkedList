@@ -1,7 +1,5 @@
 package com.zipcodewilmington.singlylinkedlist;
 
-import java.util.LinkedList;
-
 /**
  * Created by leon on 1/10/18.
  */
@@ -27,7 +25,9 @@ public class SinglyLinkedList {
             if (head == null) {
                 head = newNode;
                 tail = newNode;
-            } else {
+            }
+            else
+            {
                 tail.next = newNode;
                 tail = newNode;
             }
