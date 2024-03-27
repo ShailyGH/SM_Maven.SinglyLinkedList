@@ -75,7 +75,10 @@ public class SinglyLinkedListTest
     @Test
     public void testGet()
     {
-
+        // Then
+        Integer expected = 123;
+        Integer actual = expectedNode.get(0);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
