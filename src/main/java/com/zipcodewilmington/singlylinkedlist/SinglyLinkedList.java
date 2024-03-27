@@ -22,9 +22,10 @@ public class SinglyLinkedList {
         public void add(Node node) {
             Node newNode = new Node(data);
 
-            if (head == null) {
-                head = newNode;
-                tail = newNode;
+            if (head == null)
+            {
+                head = node;
+                tail = node;
             }
             else
             {

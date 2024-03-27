@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Optional;
+
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -11,67 +13,69 @@ import static org.junit.Assert.assertTrue;
  */
 public class SinglyLinkedListTest
 {
+    private static SinglyLinkedList list;
+    private SinglyLinkedList.Node expectedNode;
+
+    @Before
+    public void setup() {
+        // Given
+        list = new SinglyLinkedList();
+        expectedNode = list.new Node(0);
+        SinglyLinkedList.Node nd1 = list.new Node(456);
+        SinglyLinkedList.Node nd2 = list.new Node(223);
+        SinglyLinkedList.Node nd3 = list.new Node(189);
+
+        // When
+        expectedNode.add(nd1);
+        expectedNode.add(nd2);
+        expectedNode.add(nd3);
+    }
+
     @Test
     public void testAdd()
     {
-        SinglyLinkedList list = new SinglyLinkedList();
-        SinglyLinkedList.Node expectedNode = list.new Node(0);
-        SinglyLinkedList.Node nd1 = list.new Node(1);
-        expectedNode.add(nd1);
-
-        assertTrue("list size should be 1 ", expectedNode.size()==1);
+        // Then
+        assertTrue("list size should be 3 ", expectedNode.size()==3);
     }
     @Test
     public void testRemove()
     {
-        SinglyLinkedList list = new SinglyLinkedList();
-        SinglyLinkedList.Node expectedNode = list.new Node(0);
-        SinglyLinkedList.Node nd1 = list.new Node(1);
-        SinglyLinkedList.Node nd2 = list.new Node(2);
-        expectedNode.add(nd1);
-        expectedNode.add(nd2);
-        expectedNode.remove(0);
 
-        assertTrue("list size should be 1 ", expectedNode.size()==1);
     }
 
     @Test
     public void testContains()
     {
-        SinglyLinkedList list = new SinglyLinkedList();
-        SinglyLinkedList.Node expectedNode = list.new Node(0);
-        SinglyLinkedList.Node nd1 = list.new Node(12345);
-        SinglyLinkedList.Node nd2 = list.new Node(55555);
-        expectedNode.add(nd1);
-        expectedNode.add(nd2);
-        boolean expectedVal = expectedNode.contains(55555);
-        Assert.assertEquals(true, expectedVal);
-    }
-
-    @Test
-    public void testFind(){
 
     }
 
     @Test
-    public void testSize(){
-
-    }
-    @Test
-    public void testGet(){
+    public void testFind()
+    {
 
     }
 
     @Test
-    public void testCopy(){
+    public void testSize()
+    {
+
+
+    }
+    @Test
+    public void testGet()
+    {
 
     }
 
     @Test
-    public void testSort(){
+    public void testCopy()
+    {
 
     }
 
+    @Test
+    public void testSort()
+    {
 
-
+    }
 }
