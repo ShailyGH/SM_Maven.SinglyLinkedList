@@ -40,7 +40,11 @@ public class SinglyLinkedListTest
     @Test
     public void testRemove()
     {
+        // Given
+        expectedNode.remove(0);
 
+        // Then
+        assertTrue("list size should be 2 ", expectedNode.size()==2);
     }
 
     @Test
