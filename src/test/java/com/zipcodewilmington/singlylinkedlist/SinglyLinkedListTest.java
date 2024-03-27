@@ -57,7 +57,10 @@ public class SinglyLinkedListTest
     @Test
     public void testFind()
     {
-
+        // Then
+        Integer expected = 0;
+        Integer actual = expectedNode.find(123);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
