@@ -50,7 +50,8 @@ public class SinglyLinkedListTest
     @Test
     public void testContains()
     {
-
+        // Then
+        Assert.assertEquals(false, expectedNode.contains(123));
     }
 
     @Test

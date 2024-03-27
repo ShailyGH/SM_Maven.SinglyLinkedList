@@ -243,7 +243,7 @@
     "last_opened_file_path": "C:/Users/shail/java_projects/SM_Maven.SinglyLinkedList"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.testCopy">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.testContains">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -442,9 +442,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.testContains" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testCopy" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testSort" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.testContains" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testRemove" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testAdd" />
       </list>
