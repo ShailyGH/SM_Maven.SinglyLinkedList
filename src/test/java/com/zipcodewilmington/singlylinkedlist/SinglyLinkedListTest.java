@@ -84,12 +84,19 @@ public class SinglyLinkedListTest
     @Test
     public void testCopy()
     {
+        SinglyLinkedList.Node copyNode;
+        SinglyLinkedList.Node eNode = list.new Node(0);;
 
+        // Then
+        copyNode = eNode.copy(expectedNode);
+        assertTrue(copyNode.size()==expectedNode.size());
     }
 
     @Test
     public void testSort()
     {
-
+        SinglyLinkedList.Node sortNode = list.new Node(0);
+        sortNode.sort(expectedNode);
+        Assert.assertEquals(456, expectedNode.get(0));
     }
 }
