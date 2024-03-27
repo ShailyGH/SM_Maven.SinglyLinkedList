@@ -66,7 +66,10 @@ public class SinglyLinkedListTest
     @Test
     public void testSize()
     {
-
+        // Then
+        Integer expected = 2;
+        Integer actual = expectedNode.size();
+        Assert.assertEquals(expected, actual);
 
     }
     @Test
