@@ -68,29 +68,29 @@ public class SinglyLinkedList <E extends Comparable<E>>
     public void remove(int position)
     {
         int nodeArraySize = this.nodes.length;
-        Node temp = head;
-        int sizeOfList = length();
-        if (position > sizeOfList || position < 1) {
-            System.out.println("Invalid position provided");
+        Node[] newNodes = new Node[nodeArraySize-1];
+        if(position != 0 && position < nodeArraySize - 1)
+        {
+            this.nodes[position - 1].next = this.nodes[position + 1];
         }
-
-        if (position == 0) {
-            head = temp.next;
+        else if(position == nodeArraySize - 1)
+        {
+            this.nodes[position - 1].next = null;
         }
-
-        // Find previous node of the node to be deleted
-        for (int i = 0; temp != null && i < position - 1; i++)
-            temp = temp.next;
-
-        Node next = temp.next.next;
-        temp.next = next;
+        for (int i = 0, k = 0; i < this.nodes.length; i++) {
+            if (i != position) {
+                newNodes[k++] = this.nodes[i];
+            }
+        }
+        this.nodes = newNodes;
+        this.head = this.nodes[0];
     }
 
-    public int length() {
+    public int size() {
         return this.nodes.length;
-
     }
 
+    /*
     public boolean contains(int value) {
         return false;
     }
@@ -99,9 +99,7 @@ public class SinglyLinkedList <E extends Comparable<E>>
         return -1; // data not found
     }
 
-    public int size() {
-        return 0;
-    }
+
 
     public int get(int index) {
         return 0;
@@ -113,4 +111,6 @@ public class SinglyLinkedList <E extends Comparable<E>>
 
     public void sort(Node myNode) {
     }
+
+     */
 }

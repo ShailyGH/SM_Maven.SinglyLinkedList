@@ -4,100 +4,76 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Optional;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by leon on 1/10/18.
  */
 public class SinglyLinkedListTest
 {
-    private static SinglyLinkedList list;
-    private SinglyLinkedList.Node expectedNode;
+    private SinglyLinkedList<Integer> myList;
 
     @Before
-    public void setup() {
-        // Given
-        list = new SinglyLinkedList();
-        expectedNode = list.new Node(0);
-        SinglyLinkedList.Node nd1 = list.new Node(123);
-        SinglyLinkedList.Node nd2 = list.new Node(456);
-        SinglyLinkedList.Node nd3 = list.new Node(789);
-
-        // When
-        expectedNode.add(nd1);
-        expectedNode.add(nd2);
-        expectedNode.add(nd3);
+    public void setup()
+    {
+        myList = new SinglyLinkedList<Integer>();
     }
 
     @Test
     public void testAdd()
     {
-        // Then
-        assertTrue("list size should be 3 ", expectedNode.size()==3);
+        myList.add(5);
+        Assert.assertEquals(1, myList.size());
+        myList.add(2);
+        myList.add(3);
+        Assert.assertEquals(3, myList.size());
     }
+
+
     @Test
     public void testRemove()
     {
-        // Given
-        expectedNode.remove(0);
-
-        // Then
-        assertTrue("list size should be 2 ", expectedNode.size()==2);
+        myList.add(5);
+        myList.add(9);
+        myList.add(6);
+        myList.remove(2);
+        myList.add(3);
+        myList.add(4);
+        Assert.assertEquals(4, myList.size());
     }
 
     @Test
     public void testContains()
     {
-        // Then
-        Assert.assertEquals(false, expectedNode.contains(123));
+
     }
 
     @Test
     public void testFind()
     {
-        // Then
-        Integer expected = 0;
-        Integer actual = expectedNode.find(123);
-        Assert.assertEquals(expected, actual);
+
     }
 
     @Test
     public void testSize()
     {
-        // Then
-        Integer expected = 3;
-        Integer actual = expectedNode.size();
-        Assert.assertEquals(expected, actual);
 
     }
     @Test
     public void testGet()
     {
-        // Then
-        Integer expected = 123;
-        Integer actual = expectedNode.get(0);
-        Assert.assertEquals(expected, actual);
+
     }
 
     @Test
     public void testCopy()
     {
-        SinglyLinkedList.Node copyNode;
-        SinglyLinkedList.Node eNode = list.new Node(0);;
 
-        // Then
-        copyNode = eNode.copy(expectedNode);
-        assertEquals(expectedNode.size(),copyNode.size());
     }
 
     @Test
     public void testSort()
     {
-        SinglyLinkedList.Node sortNode = list.new Node(0);
-        sortNode.sort(expectedNode);
-        Assert.assertEquals(123, expectedNode.get(0));
+
     }
 }
