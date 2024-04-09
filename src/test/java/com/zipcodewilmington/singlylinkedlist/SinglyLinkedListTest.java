@@ -90,7 +90,15 @@ public class SinglyLinkedListTest
     @Test
     public void testCopy()
     {
-
+        myList.add(5);
+        myList.add(9);
+        myList.add(6);
+        myList.add(22);
+        myList.add(15);
+        SinglyLinkedList<Integer> mySinglyCopyList = myList.copy();
+        Assert.assertEquals(9, mySinglyCopyList.get(1), 0.01);
+        Assert.assertEquals(15, mySinglyCopyList.get(4), 0.01);
+        Assert.assertEquals(22, mySinglyCopyList.get(3), 0.01);
     }
 
     @Test

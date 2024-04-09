@@ -120,11 +120,17 @@ public class SinglyLinkedList <E extends Comparable<E>>
         return (E) this.nodes[index].data;
     }
 
-    /*
-    public Node copy(Node myNode) {
-        return newHead;
+
+    public SinglyLinkedList<E> copy() {
+        SinglyLinkedList<E> copyList = new SinglyLinkedList<>();
+        for (Node node: this.nodes)
+        {
+            copyList.add((E) node.data);
+        }
+        return copyList;
     }
 
+    /*
     public void sort(Node myNode) {
     }
 
