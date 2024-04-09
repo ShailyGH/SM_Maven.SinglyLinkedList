@@ -45,6 +45,7 @@ public class SinglyLinkedListTest
     @Test
     public void testContains()
     {
+        Assert.assertFalse(myList.contains(1));
         myList.add(5);
         myList.add(9);
         myList.add(6);
@@ -56,7 +57,13 @@ public class SinglyLinkedListTest
     @Test
     public void testFind()
     {
-
+        myList.add(5);
+        myList.add(9);
+        myList.add(6);
+        myList.add(10);
+        Assert.assertEquals(1, myList.find(9));
+        Assert.assertEquals(3, myList.find(10));
+        Assert.assertEquals(-1, myList.find(2));
     }
 
     @Test

@@ -90,26 +90,29 @@ public class SinglyLinkedList <E extends Comparable<E>>
     }
 
 
-    public boolean contains(E data) {
-        if (this.nodes.length > 0)
-        {
-            for(Node node: this.nodes)
-            {
-                if(node.data.equals(data))
-                {
-                    return true;
-                }
+    public boolean contains(E data)
+    {
+        for (Node node : this.nodes) {
+            if (node.data.equals(data)) {
+                return true;
             }
         }
         return false;
     }
 
-    /*
-    public int find(int element) {
+
+    public int find(E data)
+    {
+        for (int i = 0;i < this.nodes.length; i++)
+        {
+            if (this.nodes[i].data.equals(data)) {
+                return i;
+            }
+        }
         return -1; // data not found
     }
 
-
+    /*
 
     public int get(int index) {
         return 0;
