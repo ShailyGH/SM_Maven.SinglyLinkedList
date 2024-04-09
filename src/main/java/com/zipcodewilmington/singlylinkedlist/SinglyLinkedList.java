@@ -130,9 +130,25 @@ public class SinglyLinkedList <E extends Comparable<E>>
         return copyList;
     }
 
-    /*
-    public void sort(Node myNode) {
+
+    public void sort()
+    {
+        if(this.nodes.length > 0)
+        {
+            E tempVal;
+            for (int i = 0; i < this.nodes.length - 1; i++) {
+                for (int j = 0; j < this.nodes.length - i - 1; j++)
+                {
+                    if(this.nodes[j].data.compareTo(this.nodes[j+1].data) > 0)
+                    {
+                        tempVal = (E) this.nodes[j].data;
+                        this.nodes[j].data = this.nodes[j + 1].data;
+                        this.nodes[j + 1].data = tempVal;
+                    }
+                }
+            }
+        }
     }
 
-     */
+
 }

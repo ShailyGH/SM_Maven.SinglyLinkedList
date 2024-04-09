@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,27 +223,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.SinglyLinkedListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testAdd.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testContains.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testCopy.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testFind.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testGet.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testRemove.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testSize.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SinglyLinkedListTest.testSort.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.zipcodewilmington.singlylinkedlist in singlylinkedlist.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shail/java_projects/SM_Product-Inventory-Lab&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.SinglyLinkedListTest.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testAdd.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testContains.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testCopy.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testFind.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testGet.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testRemove.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testSize.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testSort.executor": "Debug",
+    "JUnit.com.zipcodewilmington.singlylinkedlist in singlylinkedlist.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/shail/java_projects/SM_Product-Inventory-Lab"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.testCopy">
+}]]></component>
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.testSort">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -331,23 +333,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.testContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="singlylinkedlist" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="testContains" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SinglyLinkedListTest.testCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
@@ -416,6 +401,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SinglyLinkedListTest.testSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="singlylinkedlist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="testSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -440,11 +442,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.testSort" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testCopy" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testSize" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testGet" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testFind" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.testContains" />
       </list>
     </recent_temporary>
   </component>
@@ -508,6 +510,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">

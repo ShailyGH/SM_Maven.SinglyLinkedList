@@ -104,6 +104,16 @@ public class SinglyLinkedListTest
     @Test
     public void testSort()
     {
+        myList.add(22);
+        myList.add(5);
+        myList.add(9);
+        myList.add(6);
+        myList.add(15);
 
+        myList.sort();
+
+        Assert.assertEquals(5.0, myList.get(0), 0.01);
+        Assert.assertEquals(9.0, myList.get(2), 0.01);
+        Assert.assertEquals(22.0, myList.get(4), 0.01);
     }
 }
