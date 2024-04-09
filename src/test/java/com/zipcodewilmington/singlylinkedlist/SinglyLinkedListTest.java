@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.util.Optional;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -21,9 +22,9 @@ public class SinglyLinkedListTest
         // Given
         list = new SinglyLinkedList();
         expectedNode = list.new Node(0);
-        SinglyLinkedList.Node nd1 = list.new Node(456);
-        SinglyLinkedList.Node nd2 = list.new Node(223);
-        SinglyLinkedList.Node nd3 = list.new Node(189);
+        SinglyLinkedList.Node nd1 = list.new Node(123);
+        SinglyLinkedList.Node nd2 = list.new Node(456);
+        SinglyLinkedList.Node nd3 = list.new Node(789);
 
         // When
         expectedNode.add(nd1);
@@ -67,7 +68,7 @@ public class SinglyLinkedListTest
     public void testSize()
     {
         // Then
-        Integer expected = 2;
+        Integer expected = 3;
         Integer actual = expectedNode.size();
         Assert.assertEquals(expected, actual);
 
@@ -89,7 +90,7 @@ public class SinglyLinkedListTest
 
         // Then
         copyNode = eNode.copy(expectedNode);
-        assertTrue(copyNode.size()==expectedNode.size());
+        assertEquals(expectedNode.size(),copyNode.size());
     }
 
     @Test
@@ -97,6 +98,6 @@ public class SinglyLinkedListTest
     {
         SinglyLinkedList.Node sortNode = list.new Node(0);
         sortNode.sort(expectedNode);
-        Assert.assertEquals(456, expectedNode.get(0));
+        Assert.assertEquals(123, expectedNode.get(0));
     }
 }
