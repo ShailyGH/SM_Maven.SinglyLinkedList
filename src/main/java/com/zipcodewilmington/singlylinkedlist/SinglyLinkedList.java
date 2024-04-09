@@ -112,12 +112,15 @@ public class SinglyLinkedList <E extends Comparable<E>>
         return -1; // data not found
     }
 
-    /*
-
-    public int get(int index) {
-        return 0;
+    public E get(int index) {
+        if((index > this.nodes.length - 1) || (index < 0))
+        {
+            return null;
+        }
+        return (E) this.nodes[index].data;
     }
 
+    /*
     public Node copy(Node myNode) {
         return newHead;
     }

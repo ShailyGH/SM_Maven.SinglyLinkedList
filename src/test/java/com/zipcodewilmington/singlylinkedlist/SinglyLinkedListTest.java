@@ -74,7 +74,12 @@ public class SinglyLinkedListTest
     @Test
     public void testGet()
     {
-
+        myList.add(5);
+        myList.add(9);
+        myList.add(6);
+        Assert.assertEquals((Integer) 5, myList.get(0));
+        Assert.assertEquals((Integer) 6, myList.get(2));
+        Assert.assertEquals(null, myList.get(-1));
     }
 
     @Test
