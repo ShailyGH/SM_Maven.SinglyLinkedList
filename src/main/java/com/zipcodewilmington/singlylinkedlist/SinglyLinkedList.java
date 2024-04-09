@@ -7,7 +7,6 @@ import java.util.Arrays;
  */
 public class SinglyLinkedList <E extends Comparable<E>>
 {
-
     public class Node<E extends Comparable<E>> implements Comparable<Node> {
         E data;
         Node next;
@@ -90,11 +89,22 @@ public class SinglyLinkedList <E extends Comparable<E>>
         return this.nodes.length;
     }
 
-    /*
-    public boolean contains(int value) {
+
+    public boolean contains(E data) {
+        if (this.nodes.length > 0)
+        {
+            for(Node node: this.nodes)
+            {
+                if(node.data.equals(data))
+                {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 
+    /*
     public int find(int element) {
         return -1; // data not found
     }
